@@ -1,0 +1,13 @@
+# ignore compiled python files
+*.pyc
+
+# ignore file system arefacts
+.DS_Store
+
+# ignore dependant reference files
+/generation/dlls/
+/generation/headers/
+/generation/db/
+
+# ignore database files
+*.db
