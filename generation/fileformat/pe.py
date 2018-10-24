@@ -273,7 +273,7 @@ def extract(fp):
         fp.readinto(export_directory_table)
 
         name = read_c_string(fp, rvatoraw(section_table, export_directory_table.Name))
-        number_of_functions = export_directory_table.NumberOfFunctions
+        number_of_functions = export_directory_table.NumberOfNames
         raw_AddressOfNames = (rvatoraw(section_table, export_directory_table.AddressOfNames))
 
         fp.seek(raw_AddressOfNames, 0)
